@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.sidebar{
+  padding:20px 0;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+  box-shadow:1px 3px 5px rgba(0,0,0,0.1);
+  background-color: white;
+}
+.sidebar .home a, .sidebar .cart a{
+  font-weight: bold;
+  font-size: 26px;
+  color:rgb(4, 44, 76);
+} 
+.sidebar .home a:hover, .sidebar .cart a:hover{
+  font-size: 24px;
+  border-bottom: 2px solid rgb(4, 44, 76);
+}
+.sidebar .cart a{
+  margin-right: 10px;
+}
+.websitename{
+  color:steelblue;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+  width:55px;
+  padding: 0;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: steelblue;
+  margin: 6px 0;
+  transition: 0.6s;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: rgb(4, 44, 76);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: rgb(4, 44, 76);
+}
+
+.search-bar input{
+  padding:15px 0;
+  border-radius: 10px;
+  border: 2px solid rgb(223, 238, 251);
+}
+
+.genres{
+  display:none;
+}
+
+.genres-changed{
+  height:100vh;
+  position:fixed;
+  top:96px;
+  left: 0;
+  z-index: 1;
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(4, 44, 76);
+}
+
+.genres-changed div{  
+  width:100%;
+  padding:15px 0;
+  color:rgb(223, 238, 251);
+  font-weight: bold;
+}
+
+.genres-changed .gen{
+  padding-left:10px;
+ 
+  text-decoration: underline;
+  font-weight: bold;
+  padding:10px 0;
+  background-color: whitesmoke;
+  color:rgb(4, 44, 76)
+}
+.genres-changed .gen .genn{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.genres-changed div span{
+  padding-left:10px;
+  font-size: 20px;
+}
+.genres-changed .item:hover{
+  background-color:rgba(0,0,0,0.2);
+}
+.sidebar .cartlink .itemno{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 38px;
+  right:15px;
+  background-color: crimson;
+  width:20px;
+  border-radius: 30px;
+  color:rgb(223, 238, 251);
+}
+.maingenre{
+  position:relative;
+  top:90px;
+  background-color: whitesmoke;
+}
+.main-heading h2{
+  display: inline-block;
+  padding:15px;
+  font-size: 30px;
+  color:steelblue;
+}
+.main-genre{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:4px;
+  align-items: center;
+  justify-content: center;
+}
+.main-genre div{
+  text-align: center;
+  color:rgb(223, 238, 251);
+  padding:95px 0;
+  width:100%;
+  font-weight: bold;
+  font-size: 22px;
+}
+.main-genre h2:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.main-genre h2{
+  font-size: 25px;
+  padding:5px 0;
+  background-color: rgba(0,0,0,0.3);
+}
+a{
+  text-decoration: none;
+  color: rgb(223, 238, 251);
+}
+.main-genre .genre1{
+  background-image: url(./images/bg-romance.jpg);
+  background-size: 420px 230px;
+}
+.main-genre .genre2{
+  background-image: url(./images/bg-act&adv.jpg);
+  background-size: 420px 280px;
+}
+.main-genre .genre3{
+  background-image: url(./images/bg-myst&thr.jpg);
+  background-size: 420px 280px;
+}
+.main-genre .genre4{
+  background-image: url(./images/bg-bio&his.jpg);
+  background-size: 420px 280px;
+}
+.main-genre .genre5{
+  background-image: url(./images/bg-fantasy.jpg);
+  background-size: 420px 280px;
+}
+.main-genre .genre6{
+  background-image: url(./images/bg-fiction.jpg);
+  background-size: 420px 280px;
+}
+
+
+
